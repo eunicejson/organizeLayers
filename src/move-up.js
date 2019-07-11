@@ -5,6 +5,9 @@ const selectedPage = document.selectedPage;
 const nativeLayers = selectedPage.sketchObject.children();
 nativeLayers.forEach(nativelayer => {
     const layer = sketch.fromNative(nativelayer);
-     sketch.UI.message(layer.name);
-    log(layer.name);
+
+    if (layer.selected == true) {
+        layer.moveForward()
+    }
 });
+

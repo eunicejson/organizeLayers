@@ -3,16 +3,16 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
+      "name": "Move Layer Up",
       "shortcut": "cmd shift ]",
-      "identifier": "organizelayers.my-command-identifier",
-      "script": "./my-command.js"
+      "identifier": "organizelayers.move-up-identifier",
+      "script": "./move-up.js"
     }
   ],
   "menu": {
     "title": "organizeLayers",
     "items": [
-      "organizelayers.my-command-identifier"
+      "organizelayers.move-up-identifier"
     ]
   }
 }
