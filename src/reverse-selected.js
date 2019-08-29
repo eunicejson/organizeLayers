@@ -1,11 +1,19 @@
 const sketch = require('sketch')
 const document = sketch.getSelectedDocument();
-const selectedPage = document.selectedPage;
+const selectedLayers = document.selectedLayers;
 
-const nativeLayers = selectedPage.sketchObject.children();
+function reverseLayers(nativeLayers) {
+    for (var i = 0; i < nativeLayers.length; i++) {
+        var layer = sketch.fromNative(nativeLayers[i]);
+        var oldLayer = sketch.fromNative(nativeLayers[nativeLayers.length - 1 - i]);
+        layer.index = oldLayer.index;
+    }
 
-// const wrappedLayers = nativeLayers.forEach(nativelayer => {
-//     return sketch.fromNative(nativelayer);
-// });
+    return nativeLayers;
+}
 
-document.showMessage('Length');
+var nativeLayers = selectedLayers;
+
+nativeLayers = reverseLayers(nativeLayers);
+
+console.log(nativeLayers);
