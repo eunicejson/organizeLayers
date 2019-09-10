@@ -2,18 +2,20 @@ const sketch = require('sketch')
 const document = sketch.getSelectedDocument();
 const selectedLayers = document.selectedLayers;
 
-function reverseLayers(nativeLayers) {
-    for (var i = 0; i < nativeLayers.length; i++) {
-        var layer = sketch.fromNative(nativeLayers[i]);
-        var oldLayer = sketch.fromNative(nativeLayers[nativeLayers.length - 1 - i]);
-        layer.index = oldLayer.index;
+// for (var i = 0; i < selectedLayers.length; i++) {
+//     const layer = sketch.fromNative(selectedLayers[i]);
+//     console.log(layer.index);
+// }
+
+selectedLayers.forEach((nativelayer) => {
+    const layer = sketch.fromNative(nativelayer);
+    for (var i = selectedLayers.length - 1; i > 0; i--) {
+        layer.moveForward();
     }
+});
 
-    return nativeLayers;
-}
-
-var nativeLayers = selectedLayers;
-
-nativeLayers = reverseLayers(nativeLayers);
-
-console.log(nativeLayers);
+// for (var i = 0; i < selectedLayers.length; i++) {
+//     var layer = sketch.fromNative(selectedLayers[i]);
+//     var oldLayer = sketch.fromNative(selectedLayers[selectedLayers.length - 1 - i]);
+//     layer.index = oldLayer.index;
+// }
