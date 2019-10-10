@@ -14,12 +14,20 @@
       "shortcut": "cmd shift [",
       "identifier": "organizelayers.move-down-identifier",
       "script": "./move-down.js"
+    },
+
+    {
+      "name": "Reserve Selected",
+      "shortcut": "ctrl alt cmd r",
+      "identifier": "organizelayers.reverse-selected-identifier",
+      "script": "./reverse-selected.js"
     }
+
   ],
   "menu": {
     "title": "organizeLayers",
     "items": [
-      "organizelayers.move-up-identifier","organizelayers.move-down-identifier"
+      "organizelayers.move-up-identifier","organizelayers.move-down-identifier","organizelayers.reverse-selected-identifier"
     ]
   }
 }
