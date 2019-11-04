@@ -2,7 +2,7 @@
 
 ## Installation
 
-- [Download](https://github.com/eunicejson/organizeLayers/releases/download/v0.2.0/organizelayers.sketchplugin.zip) the latest release of the plugin
+- [Download](https://github.com/eunicejson/organizeLayers/releases) the latest release of the plugin
 - Un-zip
 - Double-click on organizelayers.sketchplugin
 
