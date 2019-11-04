@@ -24,6 +24,8 @@
     "@skpm/builder": "^0.7.0"
   },
   "author": "Eunice Son <eunicejson@gmail.com>",
+  "repository": "https://github.com/eunicejson/organizeLayers",
+  "description": "A plugin that allows short key commands to move layers up, down and reverse positions.",
   "dependencies": {
     "skpm": "^1.2.0"
   }
