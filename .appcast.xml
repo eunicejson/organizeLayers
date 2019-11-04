@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="1.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
-   <channel>
-      <title>organizeLayers v1.0</title>
-      <description>A plugin that allows short key commands to move layers up, down and reverse positions.</description>
-      <language>en</language>
-      <item>
-         <enclosure url="https://github.com/eunicejson/organizeLayers/archive/v1.0.zip" sparkle:version="1.0.0" />
-      </item>
-   </channel>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="1.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>organizeLayers v1.0</title>
+    <description>A plugin that allows short key commands to move layers up, down and reverse positions.</description>
+    <language>en</language>
+    <item>
+      <enclosure url="https://github.com/eunicejson/organizeLayers/releases/download/v0.2.0/organizelayers.sketchplugin.zip" sparkle:version="0.2.0"/>
+    </item>
+    <item>
+      <enclosure url="https://github.com/eunicejson/organizeLayers/archive/v1.0.zip" sparkle:version="1.0.0"/>
+    </item>
+  </channel>
 </rss>
